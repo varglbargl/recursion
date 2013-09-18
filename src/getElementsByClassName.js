@@ -17,6 +17,5 @@ var getElementsByClassName = function (className) {
 			}
 		}
 	});
-	console.log(results);
 	return results;
 };
