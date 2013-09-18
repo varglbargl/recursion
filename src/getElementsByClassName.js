@@ -5,5 +5,18 @@
 
 // But in stead we're going to implement it from scratch:
 var getElementsByClassName = function (className) {
-  // your code here
+	var results = [];
+	$("*").each(function(){
+		if($(this).attr("class") != undefined){
+			var thisClass = $(this).attr("class").split(" ");
+			for(var i = 0; i < thisClass.length; i++){
+				if(thisClass[i] == className){
+					results.push($(this).context);
+					break;
+				}
+			}
+		}
+	});
+	console.log(results);
+	return results;
 };
