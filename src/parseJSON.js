@@ -4,5 +4,5 @@
 // but you're not, so you'll write it from scratch:
 var parseJSON = function (json) {
   // your code goes here
-  console.log(arguments[0]);
+  //console.log(arguments[0]);
 };
